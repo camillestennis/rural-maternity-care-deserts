@@ -30,7 +30,7 @@ All data was cleaned and joined in **SQLite** (via DB Browser for SQLite), then 
 - **Diagnosed and documented a real data limitation**: CDC WONDER suppresses birth/death counts of 9 or fewer for privacy, which disproportionately removes small rural counties — exactly the counties this project is about — from the infant mortality dataset. Only ~7 of 197 closure counties could be matched to individual CDC infant mortality records for this reason; income and demographic data, which isn't subject to the same suppression, matched successfully for 195 of 197 (99%)
 - Removed import artifacts (blank/footnote rows accidentally pulled in from source spreadsheets)
 
-See [`/sql/queries.sql`](queries.sql) for the full set of queries, including the final `hospital_closures_with_income` view.
+See [`/sql/queries.sql`](./sql/queries.sql) for the full set of queries, including the final `hospital_closures_with_income` view.
 
 ## Key Findings
 
